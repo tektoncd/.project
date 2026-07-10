@@ -1,0 +1,72 @@
+# .project metadata for Tekton
+# Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
+
+# TODO: Add adopters list (ADOPTERS.md)
+# TODO: Add package_managers if distributed via registries
+
+schema_version: "1.0.0"
+slug: "tekton"
+name: "Tekton"
+description: "A cloud-native Pipeline resource"
+type: "project"
+project_lead: "afrittoli" # TODO: AUTO-DETECTED — please verify
+slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
+  - name: "#pipelinesascode"
+    primary: true
+
+maturity_log:
+  - phase: "incubating"
+    date: "2026-07-10T16:20:26Z"
+    issue: "https://github.com/cncf/toc/issues/2088" # TODO: AUTO-DETECTED — please verify
+
+repositories:
+  - "https://github.com/tektoncd/cli"
+  - "https://github.com/tektoncd/website"
+  - "https://github.com/tektoncd/pipeline"
+  - "https://github.com/tektoncd/operator"
+  - "https://github.com/tektoncd/community"
+
+website: "https://tekton.dev"
+
+artwork: "https://raw.githubusercontent.com/cncf/artwork/main/projects/tekton/icon/color/tekton-icon-color.svg"
+
+# TODO: Add ADOPTERS.md if your project tracks adopters
+# adopters:
+#   path: "https://github.com/tektoncd/pipeline/blob/main/ADOPTERS.md"
+
+
+# TODO: Add package manager identifiers if your project is distributed via registries
+# package_managers:
+#   docker: "tektoncd/pipeline"
+
+social:
+  twitter: "https://twitter.com/tektoncd"
+
+security:
+  policy:
+    path: "https://github.com/tektoncd/.github/blob/main/SECURITY.md"
+  contact:
+    advisory_url: "https://github.com/tektoncd/pipeline/security/advisories/new"
+
+governance:
+  contributing:
+    path: "https://github.com/tektoncd/pipeline/blob/main/CONTRIBUTING.md"
+  code_of_conduct:
+    path: "https://github.com/tektoncd/pipeline/blob/main/code-of-conduct.md"
+
+legal:
+  license:
+    path: "https://github.com/tektoncd/pipeline/blob/main/LICENSE"
+  identity_type:
+    has_dco: true # AUTO-DETECTED — please verify
+    has_cla: false # AUTO-DETECTED — please verify
+    dco_url:
+      path: "https://developercertificate.org/"
+
+documentation:
+  readme:
+    path: "https://github.com/tektoncd/pipeline/blob/main/README.md"
+
+
+# CLOMonitor Score: 91/100
+# Documentation: 99 | License: 92 | Best Practices: 79 | Security: 72
