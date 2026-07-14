@@ -1,43 +1,61 @@
 # .project metadata for Tekton
 # Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
 
-# TODO: Add adopters list (ADOPTERS.md)
 # TODO: Add package_managers if distributed via registries
 
 schema_version: "1.0.0"
 slug: "tekton"
 name: "Tekton"
-description: "A cloud-native Pipeline resource"
+description: "A powerful and flexible open source framework for creating continuous integration and delivery (CI/CD) systems that allow developers to build, test, and deploy across multiple cloud providers and on-premises systems by abstracting away the underlying implementation details."
 type: "project"
-project_lead: "afrittoli" # TODO: AUTO-DETECTED — please verify
-slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
-  - name: "#pipelinesascode"
+project_lead: tektoncd/governing-board
+slack_channels:
+  - name: "#general"
+    workspace: "tekton"
+    link: "https://join.slack.com/t/tektoncd/shared_invite/zt-1z8ctzsyv-wLXWwA2Rl3AOhcNGqpWRUw"
     primary: true
 
 maturity_log:
   - phase: "incubating"
     date: "2026-07-10T16:20:26Z"
-    issue: "https://github.com/cncf/toc/issues/2088" # TODO: AUTO-DETECTED — please verify
+    issue: "https://github.com/cncf/toc/issues/2088"
 
 repositories:
-  - "https://github.com/tektoncd/cli"
-  - "https://github.com/tektoncd/website"
   - "https://github.com/tektoncd/pipeline"
+  - "https://github.com/tektoncd/triggers"
+  - "https://github.com/tektoncd/chains"
+  - "https://github.com/tektoncd/results"
+  - "https://github.com/tektoncd/cli"
+  - "https://github.com/tektoncd/dashboard"
   - "https://github.com/tektoncd/operator"
+  - "https://github.com/tektoncd/catalog"
+  - "https://github.com/tektoncd/pipelines-as-code"
+  - "https://github.com/tektoncd/pruner"
   - "https://github.com/tektoncd/community"
+  - "https://github.com/tektoncd-catalog/git-clone"
+  - "https://github.com/tektoncd-catalog/golang"
+  - "https://github.com/tektoncd-catalog/kaniko"
+
 
 website: "https://tekton.dev"
 
 artwork: "https://raw.githubusercontent.com/cncf/artwork/main/projects/tekton/icon/color/tekton-icon-color.svg"
 
-# TODO: Add ADOPTERS.md if your project tracks adopters
-# adopters:
-#   path: "https://github.com/tektoncd/pipeline/blob/main/ADOPTERS.md"
+adopters:
+  path: "https://github.com/tektoncd/community/blob/main/ADOPTERS.md"
 
-
-# TODO: Add package manager identifiers if your project is distributed via registries
-# package_managers:
-#   docker: "tektoncd/pipeline"
+package_managers:
+  docker:
+    - pipeline/*
+    - triggers/*
+    - chains/*
+    - operator/*
+    - results/*
+    - pruner/*
+    - pipelines-as-code/*
+    - catalog/*
+  homebrew: "tektoncd-cli"
+  chocolatey: "tektoncd-cli"
 
 social:
   twitter: "https://twitter.com/tektoncd"
@@ -56,17 +74,21 @@ governance:
 
 legal:
   license:
-    path: "https://github.com/tektoncd/pipeline/blob/main/LICENSE"
+    path: "https://github.com/tektoncd/.github/blob/main/LICENSE"
   identity_type:
-    has_dco: true # AUTO-DETECTED — please verify
-    has_cla: false # AUTO-DETECTED — please verify
-    dco_url:
-      path: "https://developercertificate.org/"
+    has_dco: true
+    has_cla: true
+    cla_only: true
+    cla_url:
+      path: https://easycla.lfx.linuxfoundation.org/#/?version=2
 
 documentation:
   readme:
-    path: "https://github.com/tektoncd/pipeline/blob/main/README.md"
+    path: "https://tekton.dev/docs"
 
+landscape:
+  category: "App Definition and Development"
+  subcategory: "Continuous Integration & Delivery"
 
 # CLOMonitor Score: 91/100
 # Documentation: 99 | License: 92 | Best Practices: 79 | Security: 72
