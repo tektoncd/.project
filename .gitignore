@@ -5,3 +5,6 @@ Thumbs.db
 .vscode/
 *~
 *.swp
+__pycache__/
+*.pyc
+.pytest_cache/
