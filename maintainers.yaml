@@ -2,37 +2,131 @@
 # Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
 
 
-#  Maintainers: Please connect your GitHub handle to your LFID on openprofile.dev to enable automatic access to CNCF resources. The system will use your primary email address for setup.
+#  Maintainers: Please connect your GitHub handle to your LFID on openprofile.dev
+#  to enable automatic access to CNCF resources. The system will use your primary
+#  email address for setup.
+
 maintainers:
   - project_id: "tekton"
     org: "tektoncd"
     teams:
       - name: "project-maintainers"
         members:
-          - afrittoli
           - abayer
+          - afrittoli
           - dibyom
           - enarha
           - vdemeester
+      - name: "catalog-maintainers"
+        members:
+          - chmouel
+          - vdemeester
+          - vinamra28
+      - name: "catlin-maintainers"
+        members:
+          - piyush-garg
+          - PuneetPunamiya
+          - vdemeester
+          - vinamra28
+      - name: "chains-maintainers"
+        members:
+          - ab-ghosh
+          - anithapriyanatarajan
+          - enarha
+          - infernus01
+          - jkhelil
+          - PuneetPunamiya
+          - vdemeester
+          - wlynch
+      - name: "cli-maintainers"
+        members:
+          - chmouel
+          - divyansh42
+          - pratap0007
+          - vdemeester
+          - vinamra28
+      - name: "community-maintainers"
+        members:
+          - afrittoli
+          - dibyom
+          - jerop
+          - pritidesai
+          - priyawadhwa
+          - vdemeester
+      - name: "core-maintainers"
+        members:
+          - abayer
+          - afrittoli
           - aThorp96
+          - dibyom
           - khrm
           - pritidesai
           - twoGiants
+          - vdemeester
           - waveywaves
           - wlynch
-          - chmouel
-          - theakshaypant
-          - savitaashture
-          - zakisk
-          - divyansh42
-          - pratap0007
-          - vinamra28
+      - name: "dashboard-maintainers"
+        members:
           - AlanGreene
           - briangleeson
+          - kaushalnavneet
           - LyndseyBu
-          - anithapriyanatarajan
+      - name: "homebrew-maintainers"
+        members:
+          - chmouel
+          - danielhelfand
+          - vdemeester
+      - name: "mcp-server-maintainers"
+        members:
+          - chmouel
           - jkhelil
-          - lcarva
-          - PuneetPunamiya
+          - vdemeester
+          - waveywaves
+      - name: "operator-maintainers"
+        members:
+          - anithapriyanatarajan
+          - divyansh42
+          - jkhelil
           - mbpavan
           - pramodbindal
+          - pratap0007
+          - PuneetPunamiya
+          - savitaashture
+          - vdemeester
+      - name: "pipelines-as-code-maintainers"
+        members:
+          - chmouel
+          - sm43
+          - theakshaypant
+          - vdemeester
+          - zakisk
+      - name: "plumbing-maintainers"
+        members:
+          - afrittoli
+          - AlanGreene
+          - anithapriyanatarajan
+          - savitaashture
+          - vdemeester
+      - name: "pruner-maintainers"
+        members:
+          - anithapriyanatarajan
+          - infernus01
+          - pramodbindal
+          - vdemeester
+      - name: "results-maintainers"
+        members:
+          - divyansh42
+          - enarha
+          - khrm
+          - vdemeester
+      - name: "triggers-maintainers"
+        members:
+          - khrm
+          - savitaashture
+          - vdemeester
+      - name: "website-maintainers"
+        members:
+          - afrittoli
+          - AlanGreene
+          - twoGiants
+          - vdemeester

@@ -1,0 +1,49 @@
+# Minimal org.yaml fixture for unit tests.
+# Mirrors the shape of the real tektoncd/community org/org.yaml.
+
+orgs:
+  tektoncd:
+    admins:
+      - admin-bot
+    members:
+      - regular-member
+    teams:
+      governing-board:
+        description: Tekton Governing Board
+        members:
+          - alice
+          - bob
+          - carol
+        maintainers: []
+
+      # A project where members and maintainers have no overlap
+      pipeline.maintainers:
+        description: Pipeline maintainers
+        members:
+          - dave
+          - eve
+        maintainers:
+          - frank
+
+      # A project where there IS overlap between members and maintainers
+      triggers.maintainers:
+        description: Triggers maintainers
+        members:
+          - grace
+          - heidi
+        maintainers:
+          - heidi
+          - ivan
+
+      # A non-maintainer team — must NOT appear in maintainers.yaml
+      pipeline.collaborators:
+        description: Pipeline collaborators
+        members:
+          - zoe
+        maintainers: []
+
+      # Edge-case: maintainers team with empty member lists
+      empty.maintainers:
+        description: Empty team
+        members: []
+        maintainers: []
