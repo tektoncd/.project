@@ -96,9 +96,7 @@ maintainers:
       - name: "pipelines-as-code-maintainers"
         members:
           - chmouel
-          - sm43
           - theakshaypant
-          - vdemeester
           - zakisk
       - name: "plumbing-maintainers"
         members:
