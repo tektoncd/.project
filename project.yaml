@@ -39,7 +39,7 @@ repositories:
 
 website: "https://tekton.dev"
 
-artwork: "https://raw.githubusercontent.com/cncf/artwork/main/projects/tekton/icon/color/tekton-icon-color.svg"
+artwork: "https://github.com/cncf/artwork/tree/main/projects/tekton"
 
 adopters:
   path: "https://github.com/tektoncd/community/blob/main/ADOPTERS.md"
